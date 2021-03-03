@@ -1,0 +1,106 @@
+.find-icons{
+    display: flex;
+    justify-content:space-between;
+    padding: 25px;
+}
+.find-icons__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.find-icons__icon i{
+    font-size: 35px;
+    color: rgba(0,0,0,0.6);
+}
+.find-icons__icon span{
+    margin-top: 20px;
+}
+
+.recommended-friends{
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+    padding: 25px 0px;
+    margin: 25px 0px;
+}
+
+.recommended-friends__title{
+    font-size: 14px;
+    color: var(--color-grey);
+}
+.recommended-friends span{
+    margin:100px 0;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color:var(--color-grey);
+
+}
+.open-chat__header{
+    display: flex;
+    justify-content: space-between;
+    color:var(--color-grey);
+    margin-bottom: 25px;
+}
+.open-chat__header span{
+    opacity: 0.6;
+}
+.open-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.open-post__title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.open-post__hashtags{
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+.open-post__members{
+    display: flex;
+    margin-top: 7px;
+    align-items: center;
+}
+.open-post__members img{
+    weight:15px;
+    height:15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.open-post__members-count{
+    opacity: 0.5;
+    font-size: 14px;
+}
+.open-post__members .divider{
+    width:2px;
+    height:10px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 0 5px;
+}
+.open-post__members-status{
+    color:#ffb0e0;
+}
+.open-post__photo {
+    position: relative;
+}
+.open-post__photo img{
+    width:120px;
+    height:120px;
+    border-radius: 10px;
+}
+.open-post__heart-count{
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    font-size: 12px;
+}
+.open-post__heart-count span{
+    margin-left: 3px;
+}
