@@ -1,0 +1,32 @@
+.settings__setting{
+    padding:20px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.settings__setting i{
+    margin-right: 20px;
+    font-size: 22px;
+    opacity: 0.8;
+}
+.settings__setting-column:last-child{
+    opacity: 0.5;
+}
+@keyframes iconJump{
+    0%{
+        transform: 1;
+    }
+    50%{
+        transform: translateY(-3px) scale(1.1);
+    }
+    100%{
+        transform: 1;
+    }
+}
+.settings__setting-column:hover{
+    will-change: transform;
+    animation: iconJump 2s linear infinite;
+
+}

@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontal-space);
-    padding-top: 40px;
+    padding-top: 60px;
     opacity: 90%;
     margin-bottom: 15px;
     position: relative;
@@ -15,6 +15,7 @@
 .screen-header__icons span{
     margin-left: 25px;
 }
+
 .screen-header__dot{
     background-color: tomato;
     width:7px;
@@ -24,6 +25,21 @@
     align-items: center;
     border-radius: 3.5px;
     position: absolute;
-    top:35px;
+    top:55px;
     right:20px;
+}
+
+@keyframes rotateCog{
+    from{
+        transform: none;
+
+    }
+    to{
+        transform: rotateZ(360deg);
+
+    }
+}
+.screen-header__icons .fa-cog:hover{
+    animation: rotateCog 2s linear infinite;
+
 }

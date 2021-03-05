@@ -29,24 +29,26 @@
             <span><i class="fas fa-search fa-lg"></i></span>
             <span><i class="far fa-comment-dots fa-lg"></i></span>
             <span><i class="fas fa-music fa-lg"></i></span>
-            <span><i class="fas fa-cog fa-lg"></i></span>
+            <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
         </div>
     </header>
     <main class="main-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img class="user-component__avatar  user-component__avatar"
-                    src="https://kin-phinf.pstatic.net/20210226_300/1614324075597UnBHX_JPEG/Screenshot_20210226-161957_KakaoTalk.jpg?type=w750" />
-                <div class="user-component__text">
-                    <h4 class="user-component__title">Jimin</h4>
-                    <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
+        <a href="chat.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar  user-component__avatar"
+                        src="https://kin-phinf.pstatic.net/20210226_300/1614324075597UnBHX_JPEG/Screenshot_20210226-161957_KakaoTalk.jpg?type=w750" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Jimin</h4>
+                        <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">21:22</span>
+                    <div class="badge">1</div>
                 </div>
             </div>
-            <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <div class="badge">1</div>
-            </div>
-        </div>
+        </a>
     </main>
     <nav class="nav">
         <ul class="nav__list">
@@ -59,6 +61,13 @@
                         class="fas fa-ellipsis-h fa-2x"></i></a></li>
         </ul>
     </nav>
+    <div id="no-mobile">
+        <span>Your Screen is too big</span>
+        <span>(화면크기(좌우)를 줄여주세요ㅠㅠ)</span>
+    </div>
+    <div id="no-landscape">
+        <span>세로모드로 변경해주세요 ㅠㅠ</span>
+    </div>
     <script src="https://kit.fontawesome.com/2915757cf4.js" crossorigin="anonymous"></script>
 </body>
 

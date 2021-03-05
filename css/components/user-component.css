@@ -36,6 +36,12 @@
     margin-top: 8px;
     font-size: 17px;
     color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+}
+.user-component__subtitle i{
+    margin-left: 3px;
+    color: tomato;
 }
 .user-component__title--not-bold{
     font-weight: 400;
