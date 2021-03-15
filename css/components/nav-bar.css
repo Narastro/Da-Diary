@@ -24,7 +24,7 @@
 
     }
     50%{
-        transform: translateY(-5px) rotateY(360deg);
+        transform: translateY(-5px) scale(1.1);
 
     }
     100%{
@@ -38,7 +38,7 @@
     position: absolute;
     left: 15px;
     bottom: 15px;
-    animation: notificationAnimation 4s ease-in-out infinite;
+    animation: notificationAnimation 3s ease-in-out infinite;
 }
 
 .nav__new{

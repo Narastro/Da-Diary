@@ -32,7 +32,9 @@
     transition: border-color 0.3s ease-in-out;
 }
 #login-form input::placeholder{
-    color:rgba(0,0,0,0.4)
+    color:rgba(0,0,0,0.3);
+    font-size: 15px;
+    font-weight: 600;;
 }
 #login-form input:focus{
     border-color: var(--yellow);
@@ -48,9 +50,21 @@
     padding: 20px 0px;
     border-radius: 5px;
 }
+#login-form div{
+    display: flex;
+    justify-content: space-between;
+}
 #login-form a{
     text-align: center;
     text-decoration: none;
-    color:inherit;
-    font-size: 13px;
+    color:rgba(0,0,0,0.6);
+    font-size: 12px;
+    font-weight: 600;
+}
+#login-form__account{
+    display: flex;
+    justify-content: space-evenly;
+}
+#login-form__account a:first-child{
+    margin-right: 10px;
 }

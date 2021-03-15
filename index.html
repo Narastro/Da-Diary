@@ -13,31 +13,38 @@
             <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-            <span>18:43</span>
+            <span class="jsClock">18:43</span>
         </div>
         <div class="status-bar__column">
-            <span>110%</span>
+            <span>100%</span>
             <i class="fas fa-battery-full fa-lg"></i>
             <i class="fas fa-bolt"></i>
         </div>
     </div>
     <header class="welcom-header">
         <h1 class="welcom-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcom-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
     </header>
     <form action="friends.html" method="GET" id="login-form">
-        <input name="username" type="text" placeholder="Email or Phone number" />
-        <input name="password" type="password" placeholder="Password"/>
-        <input type="submit" value="Log In"/>
-        <a href="#">Find Kokoa Account or Password</a>
+        <input name="username" type="text" placeholder="아이디,이메일 또는 전화번호" />
+        <input name="password" type="password" placeholder="비밀번호"/>
+        <input type="submit" value="로그인"/>
+        <div>
+            <div>
+                <a href="#">회원가입</a>
+            </div>
+            <div id="login-form__account">
+                <a href="#">코코아계정</a>
+                <a href="#">비밀번호 찾기</a>
+            </div>
+        </div>
     </form>
     <div id="no-mobile">
-        <span>Your Screen is too big</span>
-        <span>(화면크기(좌우)를 좀!! 줄여주세요ㅠㅠ)</span>
+        <span>좌우 화면크기를 조금만 더 줄여주세요! :)</span>
     </div>
     <div id="no-landscape">
-        <span>세로모드로 변경해주세요 ㅠㅠ</span>
+        <span>좌우 화면크기를 줄여주시면 원래 화면이 나타납니다 :)</span>
     </div>
     <script src="https://kit.fontawesome.com/2915757cf4.js" crossorigin="anonymous"></script>
+    <script src="clock.js"></script>
 </body>
 </html>

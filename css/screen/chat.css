@@ -109,7 +109,11 @@
 .message-row--own{
     justify-content: flex-end;
     animation: fadeInRight 1s linear forwards;
-    animation-delay: 2.3s;
+    animation-delay: 1.5s;
+}
+.message-row__column{
+    display: flex;
+    flex-direction: column;
 }
 .message-row--own .message__buble{
     background-color: var(--yellow);
@@ -120,6 +124,7 @@
 }
 .message-row--own .message__info{
     flex-direction: row-reverse;
+    margin-bottom: 10px;
 }
 .reply{
     position: fixed;
