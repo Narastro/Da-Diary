@@ -19,11 +19,11 @@
 
 ## 스크린샷
 
-<img width="600" height="400" alt="First page" src="/captures/1.png"></img>
-<img width="600" height="400" alt="motion before second page" src="/captures/2.png"/>
-<img width="600" height="400" alt="Friends page" src="/captures/3.png"/>
-<img width="600" height="400" alt="Chattings page" src="/captures/4.png"/>
-<img width="600" height="400" alt="Chatting page-write message" src="/captures/5.png"/>
-<img width="600" height="400" alt="Chatting page-enter message" src="/captures/6.png"/>
-<img width="600" height="400" alt="Search page" src="/captures/7.png"/>
-<img width="600" height="400" alt="More page" src="/captures/8.png"/>
+<img width="600" height="400" alt="First page" src="/captures/1.PNG">
+<img width="600" height="400" alt="motion before second page" src="/captures/2.PNG"/>
+<img width="600" height="400" alt="Friends page" src="/captures/3.PNG"/>
+<img width="600" height="400" alt="Chattings page" src="/captures/4.PNG"/>
+<img width="600" height="400" alt="Chatting page-write message" src="/captures/5.PNG"/>
+<img width="600" height="400" alt="Chatting page-enter message" src="/captures/6.PNG"/>
+<img width="600" height="400" alt="Search page" src="/captures/7.PNG"/>
+<img width="600" height="400" alt="More page" src="/captures/8.PNG"/>
