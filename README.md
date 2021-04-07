@@ -19,11 +19,11 @@
 
 ## 스크린샷
 
-<img width="600" height="400" alt="First page" src="/captures/1.PNG">
-<img width="600" height="400" alt="motion before second page" src="/captures/2.PNG"/>
-<img width="600" height="400" alt="Friends page" src="/captures/3.PNG"/>
-<img width="600" height="400" alt="Chattings page" src="/captures/4.PNG"/>
-<img width="600" height="400" alt="Chatting page-write message" src="/captures/5.PNG"/>
-<img width="600" height="400" alt="Chatting page-enter message" src="/captures/6.PNG"/>
-<img width="600" height="400" alt="Search page" src="/captures/7.PNG"/>
-<img width="600" height="400" alt="More page" src="/captures/8.PNG"/>
+<img width="600" height="400" alt="First page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/1.PNG?raw=true">
+<img width="600" height="400" alt="motion before second page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/2.PNG?raw=true"/>
+<img width="600" height="400" alt="Friends page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/3.PNG?raw=true"/>
+<img width="600" height="400" alt="Chattings page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/4.PNG?raw=true"/>
+<img width="600" height="400" alt="Chatting page-write message" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/5.PNG?raw=true"/>
+<img width="600" height="400" alt="Chatting page-enter message" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/6.PNG?raw=true"/>
+<img width="600" height="400" alt="Search page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/7.PNG?raw=true"/>
+<img width="600" height="400" alt="More page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/8.PNG?raw=true"/>
