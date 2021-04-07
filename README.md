@@ -18,12 +18,12 @@
 
 
 ## 스크린샷
-
-<img width="600" height="400" alt="First page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/1.PNG?raw=true">
-<img width="600" height="400" alt="motion before second page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/2.PNG?raw=true"/>
-<img width="600" height="400" alt="Friends page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/3.PNG?raw=true"/>
-<img width="600" height="400" alt="Chattings page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/4.PNG?raw=true"/>
-<img width="600" height="400" alt="Chatting page-write message" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/5.PNG?raw=true"/>
-<img width="600" height="400" alt="Chatting page-enter message" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/6.PNG?raw=true"/>
-<img width="600" height="400" alt="Search page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/7.PNG?raw=true"/>
-<img width="600" height="400" alt="More page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/8.PNG?raw=true"/>
+<First page>
+<img width="700" height="1000" alt="First page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/1.PNG?raw=true">
+<img width="700" height="1000" alt="motion before second page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/2.PNG?raw=true"/>
+<img width="700" height="1000" alt="Friends page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/3.PNG?raw=true"/>
+<img width="700" height="1000" alt="Chattings page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/4.PNG?raw=true"/>
+<img width="700" height="1000" alt="Chatting page-write message" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/5.PNG?raw=true"/>
+<img width="700" height="1000" alt="Chatting page-enter message" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/6.PNG?raw=true"/>
+<img width="700" height="1000" alt="Search page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/7.PNG?raw=true"/>
+<img width="700" height="1000" alt="More page" src="https://github.com/Narastro/kokoa-clone-2021/blob/master/captures/8.PNG?raw=true"/>
