@@ -19,7 +19,7 @@
 
 ## 스크린샷
 
-<img width="600" height="400" alt="First page" src="/captures/1.png"/>
+<img width="600" height="400" alt="First page" src="/captures/1.png"></img>
 <img width="600" height="400" alt="motion before second page" src="/captures/2.png"/>
 <img width="600" height="400" alt="Friends page" src="/captures/3.png"/>
 <img width="600" height="400" alt="Chattings page" src="/captures/4.png"/>
