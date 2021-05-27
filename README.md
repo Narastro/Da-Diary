@@ -1,4 +1,4 @@
-# Kakao Talk clone
+# Da Diary (다양한 기능을 가진 다이어리, 다다이어리)
 ## 개요
  HTML, CSS(+Javascript) 학습을 위한 카카오톡 클론코딩
 
