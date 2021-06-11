@@ -34,7 +34,9 @@
     </header>
     <a id="friends-display-link">
       <i class="fas fa-info-circle"></i>
-      할 일을 추가해 주세요<i class="fas fa-chevron-right fa-xs"></i>
+      해야할 일과 완료한 일을 관리해보세요<i
+        class="fas fa-chevron-right fa-xs"
+      ></i>
     </a>
 
     <main class="friends-screen">
@@ -57,7 +59,7 @@
           ,type="text"
           placeholder="할 일을 적어주세요 :)"
         />
-        <input type="submit" ,value="입력" />
+        <input class="toDoInputSubmit" type="submit" ,value="입력" />
       </form>
       <div class="friends-screen__channel">
         <div class="friends-screen__channel-header">
@@ -69,14 +71,14 @@
           <div class="user-component__column">
             <div class="user-component__text">
               <ul class="toDoList"></ul>
-              <h4
+              <h5
                 class="
                   user-component__title user-component__title--not-bold
                   toDoWhat
                 "
               >
                 할 일이 없습니다
-              </h4>
+              </h5>
             </div>
           </div>
           <div class="user-component__column">
@@ -97,14 +99,14 @@
           <div class="user-component__column">
             <div class="user-component__text">
               <ul class="completeToDoList"></ul>
-              <h4
+              <h5
                 class="
                   user-component__title user-component__title--not-bold
                   DoneWhat
                 "
               >
                 완료한 일이 없습니다
-              </h4>
+              </h5>
             </div>
           </div>
           <div class="user-component__column">
@@ -120,24 +122,24 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="fas fa-list-ul fa-2x"></i></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html"
             ><span class="nav__notification badge">1</span
-            ><i class="far fa-comment fa-2x"></i
+            ><i class="fas fa-folder-minus fa-2x"></i></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
+            ><i class="fas fa-calculator fa-2x"></i></i></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html"
             ><span class="nav__new"></span
-            ><i class="fas fa-ellipsis-h fa-2x"></i
+            ><i class="fas fa-paint-roller fa-2x"></i></i
           ></a>
         </li>
       </ul>

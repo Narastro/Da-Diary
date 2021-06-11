@@ -51,3 +51,69 @@
   animation: hideSplashScreen 0.3s ease-in-out forwards;
   animation-delay: 1s;
 }
+
+.toDoForm {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.toDoInput {
+  width: 80%;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+  bottom: 0;
+}
+
+.toDoInput::placeholder {
+  font-size: 20px;
+}
+
+.toDoInputSubmit {
+  width: 13%;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.toDoInputSubmit:hover {
+  cursor: pointer;
+  background-color: darkgray;
+}
+.toDoInputSubmit:active {
+  width: 12%;
+  height: 45px;
+}
+
+.user-component__text {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.user-component__text button {
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 3px solid black;
+  background-color: whitesmoke;
+}
+
+.user-component__text button:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.user-component__text button:active {
+  width: 35px;
+  height: 35px;
+}
