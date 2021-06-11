@@ -15,12 +15,14 @@
 - 디데이 계산
 - 계산기
 - 그림판
-- 
+
+
+
 
 ## 스크린샷
 
 >![index](https://user-images.githubusercontent.com/78056880/121689864-1d7b7200-cb00-11eb-8c00-961a6095ca90.PNG)
-> 초기화면 (현재 시간과 연동된 날짜 사용)
+> 초기화면 
 
 
 >![todo](https://user-images.githubusercontent.com/78056880/121689979-413eb800-cb00-11eb-8cdb-56282c60fd6b.PNG)
