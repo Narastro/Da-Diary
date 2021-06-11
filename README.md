@@ -29,24 +29,24 @@
 
 
 >![memo](https://user-images.githubusercontent.com/78056880/121689988-43a11200-cb00-11eb-936c-ff6f9fb3bac2.PNG)
->메모장 들어가기 전
+> 메모장 들어가기 전
 
 
 
 >![memoin](https://user-images.githubusercontent.com/78056880/121689993-456ad580-cb00-11eb-9568-2fe1c96df5a8.PNG)
->메모장 내부
+> 메모장 내부
 
 
 >![ddaybefore](https://user-images.githubusercontent.com/78056880/121690001-469c0280-cb00-11eb-98b1-ade14632bc34.PNG)
->디데이 계산 전
+> 디데이 계산 전
 
 
 
 >![ddayafter](https://user-images.githubusercontent.com/78056880/121690005-47cd2f80-cb00-11eb-808e-f6a39154b517.PNG)
->디데이 계산 후
+> 디데이 계산 후
 
 
 >![paint](https://user-images.githubusercontent.com/78056880/121690012-4996f300-cb00-11eb-9252-df64fe75836e.PNG)
->그림판
+> 그림판
 
 
