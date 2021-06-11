@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>First Note - DaDiary</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Chat with Jimin - Kokoa Clone</title>
-</head>
-
-<body id="chat-screen">
+  <body id="chat-screen">
     <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-            <span class="jsClock">18:43</span>
-        </div>
-        <div class="status-bar__column">
-            <span>100%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="jsClock">18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
     </div>
     <header class="alt-header">
-        <div class="alt-header__column">
-            <a href="chats.html">
-                <i class="fas fa-angle-left fa-3x"></i>
-            </a>
-        </div>
-        <div class="alt-header__column">
-            <h1 class="alt-header__title">Jimin</h1>
-        </div>
-        <div class="alt-header__column">
-            <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="fas fa-bars fa-lg"></i></span>
-        </div>
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">첫 번째 메모</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
     </header>
     <main class="main-screen main-chat">
-        <div class="chat__timestamp">
-            Thusday, March 5, 2021
+      <div class="chat__timestamp">Thusday, March 5, 2021</div>
+      <div class="message-row meassage-row--you">
+        <img
+          src="https://e7.pngegg.com/pngimages/553/526/png-clipart-notepad-computer-icons-others-angle-text.png"
+        />
+        <div class="message-row_content">
+          <span class="message__author">안내</span>
+          <div class="message__info">
+            <span class="message__buble"
+              >텍스트를 입력하면 자동으로 저장됩니다</span
+            >
+            <span class="message__time">21:27</span>
+          </div>
         </div>
-        <div class="message-row meassage-row--you">
-            <img src="https://kin-phinf.pstatic.net/20210226_300/1614324075597UnBHX_JPEG/Screenshot_20210226-161957_KakaoTalk.jpg?type=w750"/>
-            <div class="message-row_content">
-                <span class="message__author">Jimin</span>
-                <div class="message__info">
-                    <span class="message__buble">I Love You!</span>
-                    <span class="message__time">21:27</span>
-                </div>
-            </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__column">
+          <div class="message-row_content message__info"></div>
         </div>
-        <div class="message-row message-row--own">
-            <div class="message-row__column">
-                <div class="message-row_content message__info">
-                    <span class="message__buble">Me too!</span>
-                    <span class="message__time">21:27</span>
-                </div>
-            </div>
-        </div>
+      </div>
     </main>
     <form class="reply">
-        <div class="reply__column">
-            <i class="far fa-plus-square fa-lg"></i>
-        </div>
-        <div class="reply__column">
-            <input type="text" placeholder="Write a message..."/>
-            <i class="far fa-smile fa-2x"></i>
-            <button>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-        </div>
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile fa-2x"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
     </form>
     <div id="no-mobile">
-        <span>좌우 화면크기를 조금만 더 줄여주세요! :)</span>
+      <span>좌우 화면크기를 조금만 더 줄여주세요! :)</span>
     </div>
     <div id="no-landscape">
-        <span>좌우 화면크기를 줄여주시면 원래 화면이 나타납니다 :)</span>
+      <span>좌우 화면크기를 줄여주시면 원래 화면이 나타납니다 :)</span>
     </div>
-    <script src="https://kit.fontawesome.com/2915757cf4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2915757cf4.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="clock.js"></script>
     <script src="chat.js"></script>
-</body>
-
+  </body>
 </html>
