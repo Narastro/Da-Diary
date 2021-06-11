@@ -63,20 +63,25 @@
         <div class="friends-screen__channel-header">
           <span>해야할 일</span>
           <i class="fas fa-chevron-up fa-xs"></i>
-          <ul class="toDoList"></ul>
         </div>
 
         <div class="user-component">
           <div class="user-component__column">
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
+              <ul class="toDoList"></ul>
+              <h4
+                class="
+                  user-component__title user-component__title--not-bold
+                  toDoWhat
+                "
+              >
                 할 일이 없습니다
               </h4>
             </div>
           </div>
           <div class="user-component__column">
             <div>
-              <span>0</span>
+              <span class="todoNum">0</span>
               <i class="fas fa-chevron-right fa-xs"></i>
             </div>
           </div>
@@ -91,14 +96,20 @@
         <div class="user-component">
           <div class="user-component__column">
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
+              <ul class="completeToDoList"></ul>
+              <h4
+                class="
+                  user-component__title user-component__title--not-bold
+                  DoneWhat
+                "
+              >
                 완료한 일이 없습니다
               </h4>
             </div>
           </div>
           <div class="user-component__column">
             <div>
-              <span>0</span>
+              <span class="doneNum">0</span>
               <i class="fas fa-chevron-right fa-xs"></i>
             </div>
           </div>
