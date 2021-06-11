@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Find - Kokoa Clone</title>
+    <title>Dday & Calculator - DaDiary</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <header class="screen-header">
-        <h1 class="screen-header__title">찾기</h1>
+        <h1 class="screen-header__title">디데이 계산</h1>
         <div class="screen-header__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
             <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
@@ -34,57 +34,70 @@
     <main class="main-screen">
         <div class="icon-row">
             <div class="icon-row__icon">
-                <i class="fas fa-qrcode"></i>
-                <span>QR코드</span></div>
+                <input id="dDayDate" type="date" name="date">
+                <span>원하는 날짜 입력</span></div>
             <div class="icon-row__icon">
-                <i class="far fa-address-book"></i>
-                <span>연락처 추가</span></div>
+                <input list="method-choice-data" class="method-choice" name="method-choice"/>
+                <datalist id="method-choice-data">
+                    <option value="디데이로 계산">
+                    <option value="남은 날짜로 계산">
+                </datalist>
+                <span>계산 방법 선택</span></div>
             <div class="icon-row__icon">
-                <i class="fas fa-fingerprint"></i>
-                <span>아이디 추가</span></div>
-            <div class="icon-row__icon">
-                <i class="far fa-envelope"></i>
-                <span>초대</span></div>
+                <button class="dDaybtn">계산하기</button>
+            </div>
         </div>
         <div class="recommended-friends">
-            <h6 class="recommended-friends__title">친구 추천</h6>
-            <span>You have no recommended friends.</span>
+            <h6 class="recommended-friends__title">디데이</h6>
+            <span class="defaultMent">원하는 날짜 및 계산방법 선택 후 계산하기를 누르시면 출력됩니다</span>
+            <div class="jsDday"></div>
         </div>
         <div class="open-chat">
             <div class="open-chat__header">
-                <h4 class="open-chat__title">오픈챗</h4>
-                <span>Go to Openchat Home </span>
+                <h4 class="open-chat__title">계산기</h4>
+                <span>계산기를 사용해보십시오!</span>
                 <i class="fas fa-chevron-right fa-xs"></i>
             </div>
-            <div class="open-post">
-                <div class="open-post__column">
-                    <h5 class="open-post__title">#BTS</h5>
-                    <h6 class="open-post__hashtags">#bts#army#friends</h6>
-                    <div class="open-post__members">
-                        <img src="https://avatars.githubusercontent.com/u/78056880"/>
-                        <span class="open-post__members-count">802 members</span>
-                        <div class="divider"></div>
-                        <span class="open-post__members-status">Active</span>
-                    </div>
+            <div class="calculator">
+                <div class="first-line">
+                  <div class="display-num"></div>
+                  <div class="block button-C">C</div>
                 </div>
-                <div class="open-post__column">
-                    <div class="open-post__photo">
-                        <img src="https://image.chosun.com/sitedata/image/202006/09/2020060903299_0.jpg"/>
-                    <div class="open-post__heart-count"><i class="fas fa-heart fa-xs"></i><span>326</span></div>
-                    </div>
+                <div class="keypad">
+                  <div class="block button-7">7</div>
+                  <div class="block button-8">8</div>
+                  <div class="block button-9">9</div>
+                  <div class="block op button-plus">+</div>
+                </div>
+                <div class="keypad">
+                  <div class="block button-4">4</div>
+                  <div class="block button-5">5</div>
+                  <div class="block button-6">6</div>
+                  <div class="block op button-minus">-</div>
+                </div>
+                <div class="keypad">
+                  <div class="block button-1">1</div>
+                  <div class="block button-2">2</div>
+                  <div class="block button-3">3</div>
+                  <div class="block op button-multiply">*</div>
+                </div>
+                <div class="keypad">
+                  <div class="block button-0">0</div>
+                  <div class="block button-equal">=</div>
+                  <div class="block op button-divider">/</div>
                 </div>
             </div>
         </div>
     </main>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fas fa-list-ul fa-2x"></i></a></li>
             <li class="nav__btn"><a class="nav__link" href="chats.html">
                     <span class="nav__notification badge">1</span>
-                    <i class="far fa-comment fa-2x"></i>
-            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+                    <i class="fas fa-folder-minus fa-2x"></i>
+            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-calculator fa-2x"></i></a></li>
             <li class="nav__btn"><a class="nav__link" href="more.html"><span class="nav__new"></span>
-                <i class="fas fa-ellipsis-h fa-2x"></i></a></li>
+                <i class="fas fa-paint-roller fa-2x"></i></a></li>
         </ul>
     </nav>
     <div id="no-mobile">
@@ -95,6 +108,8 @@
     </div>
     <script src="https://kit.fontawesome.com/2915757cf4.js" crossorigin="anonymous"></script>
     <script src="clock.js"></script>
+    <script src="calculator.js"></script>
+    <script src="dDay.js"></script>
 </body>
 
 </html>
