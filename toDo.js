@@ -14,24 +14,39 @@ let toDos = [],
   dones = [],
   idNumbers = 1;
 
-function deleteDone(event) {
+// 완료한 일 삭제하는 함수
+const deleteDone = (event) => {
   const btn = event.target;
   const li = btn.parentNode;
+
   doneList.removeChild(li);
-  const cleanDone = dones.filter(function (done) {
-    return done.id !== parseInt(li.id);
-  });
-  dones = cleanDone;
+  dones = dones.filter((done) => done.id !== parseInt(li.id));
+
   handledefault();
   saveToDos();
-}
+};
 
-function completeToDo(text) {
+// 할 일 삭제하는 함수
+const deleteToDo = (event) => {
+  const btn = event.target;
+  const li = btn.parentNode;
+
+  toDoList.removeChild(li);
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+
+  handledefault();
+  saveToDos();
+};
+
+// 완료한 일 추가하는 함수
+const completeToDo = (text) => {
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = idNumbers;
+
   idNumbers += 1;
+
   delBtn.innerText = "❌";
   delBtn.addEventListener("click", deleteDone);
   span.innerText = text + " ";
@@ -39,41 +54,57 @@ function completeToDo(text) {
   li.appendChild(span);
   li.appendChild(delBtn);
   li.id = newId;
+
   doneList.appendChild(li);
   const doneObj = {
-    text: text,
+    text,
     id: newId,
   };
+
   dones.push(doneObj);
   saveToDos();
-}
+};
 
-function handleSubmit(event) {
-  event.preventDefault();
-  const currentValue = toDoInput.value;
-  paintToDo(currentValue);
-  handledefault();
-  toDoInput.value = "";
-}
+// 할 일 추가하는 함수
+const paintToDo = (text) => {
+  const li = document.createElement("li");
+  const comBtn = document.createElement("button");
+  const delBtn = document.createElement("button");
+  const span = document.createElement("span");
+  const newId = idNumbers;
 
-function deleteToDo(event) {
-  const btn = event.target;
-  const li = btn.parentNode;
-  toDoList.removeChild(li);
-  const cleanToDos = toDos.filter(function (toDo) {
-    return toDo.id !== parseInt(li.id);
+  idNumbers += 1;
+  delBtn.innerText = "❌";
+  comBtn.innerText = "✔";
+
+  delBtn.addEventListener("click", deleteToDo);
+  comBtn.addEventListener("click", () => {
+    completeToDo(text), deleteToDo(event);
   });
-  toDos = cleanToDos;
-  handledefault();
-  saveToDos();
-}
+  span.innerText = text + " ";
 
-function saveToDos() {
+  li.appendChild(span);
+  li.appendChild(comBtn);
+  li.appendChild(delBtn);
+  li.id = newId;
+
+  toDoList.appendChild(li);
+  const toDoObj = {
+    text,
+    id: newId,
+  };
+  toDos.push(toDoObj);
+  saveToDos();
+};
+
+// 현재 객체를 로컬스토리지에 저장하는 함수
+const saveToDos = () => {
   localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
   localStorage.setItem(DONE_LS, JSON.stringify(dones));
-}
+};
 
-function handledefault() {
+// 디폴트 메세지 및 갯수를 출력해주는 함수
+const handledefault = () => {
   defaultTodo.style.opacity = 1;
   defaultDone.style.opacity = 1;
   todoNum.innerText = 0;
@@ -89,63 +120,38 @@ function handledefault() {
     defaultDone.style.opacity = 0;
     doneNum.innerText = num;
   }
-}
+};
 
-function paintToDo(text) {
-  const li = document.createElement("li");
-  const comBtn = document.createElement("button");
-  const delBtn = document.createElement("button");
-  const span = document.createElement("span");
-  const newId = idNumbers;
-  idNumbers += 1;
-  delBtn.innerText = "❌";
-  comBtn.innerText = "✔";
-  delBtn.addEventListener("click", deleteToDo);
-  comBtn.addEventListener("click", () => {
-    completeToDo(text), deleteToDo(event);
-  });
-  span.innerText = text + " ";
-
-  li.appendChild(span);
-  li.appendChild(comBtn);
-  li.appendChild(delBtn);
-  li.id = newId;
-  toDoList.appendChild(li);
-  const toDoObj = {
-    text: text,
-    id: newId,
-  };
-  toDos.push(toDoObj);
-  saveToDos();
-}
-
-function handleSubmit(event) {
+// 입력 버튼을 눌렀을 때 처리하는 함수
+const handleSubmit = (event) => {
   event.preventDefault();
   const currentValue = toDoInput.value;
   paintToDo(currentValue);
   handledefault();
   toDoInput.value = "";
-}
+};
 
-function loadToDos() {
+// 로컬스토리지에 저장된 값을 불러오는 함수
+const loadToDos = () => {
   const loadedToDos = localStorage.getItem(TODOS_LS);
   const loadedDones = localStorage.getItem(DONE_LS);
   if (loadedToDos !== null) {
     const parsedToDos = JSON.parse(loadedToDos);
-    parsedToDos.forEach(function (toDo) {
+    parsedToDos.forEach((toDo) => {
       paintToDo(toDo.text);
     });
     handledefault();
   }
   if (loadedDones !== null) {
     const parsedDones = JSON.parse(loadedDones);
-    parsedDones.forEach(function (done) {
+    parsedDones.forEach((done) => {
       completeToDo(done.text);
     });
     handledefault();
   }
-}
+};
 
+// 초기 함수
 function init() {
   loadToDos();
   toDoForm.addEventListener("submit", handleSubmit);
